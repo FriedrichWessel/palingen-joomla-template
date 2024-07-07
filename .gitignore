@@ -1,0 +1,79 @@
+# Logs and database dumps
+*.log
+*.sql
+*.sqlite
+*.sqlite3
+
+# Joomla specific files and directories
+/libraries/tests/
+/logs/
+logs
+/tmp/
+tmp
+/cache/
+cache
+
+# Ignore configuration files
+/configuration.php
+/configuration.php-dist
+
+# Ignore the Joomla directory to avoid committing Joomla core files
+joomla/*
+!joomla/templates/
+joomla/templates/*
+!joomla/templates/palingen/
+joomla/administrator/logs/
+joomla/tmp/
+
+# Ignore docker-compose specific files
+docker-compose.override.yml
+docker-compose.*.yml
+**/.docker
+*.env
+.env
+
+# Ignore Node modules (if using npm for tooling)
+node_modules/
+
+# Ignore vendor directory (if using composer)
+/vendor/
+
+# Ignore OS-generated files
+.DS_Store
+Thumbs.db
+
+# Ignore VS Code specific settings
+.vscode/
+.idea/
+
+# Ignore dotenv environment files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignore backup files
+*.bak
+*.swp
+*.swo
+*~
+
+# Ignore other OS-generated files
+.Trashes
+._*
+
+# Ignore compiled phpunit tests
+.phpunit.result.cache
+phpunit.xml
+
+# Ignore MacOS
+.DS_Store
+*.swm
+
+# Ignore Windows
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Ignore Linux generated files
+*~
